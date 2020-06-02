@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="conventional_JIRA",
-    version="0.2.1",
+    version="0.2.2",
     py_modules=["cz_conventional_JIRA"],
     author = 'Michael Kuc',
     author_email = 'michaelkuc6@gmail.com',

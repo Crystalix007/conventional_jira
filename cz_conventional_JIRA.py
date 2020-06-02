@@ -167,8 +167,8 @@ class Conventional_jiraCz(BaseCommitizen):
 
     def schema_pattern(self) -> str:
         PATTERN = (
-            r"(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert|bump)"
-            r"(\(\w+-\d+(, \w+-\d+)*\))?:\s.*"
+            r"(?m)(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert|bump)"
+            r"(\(\w+-\d+(, \w+-\d+)*\))?:\s[^A-Z][^\n]*?[^.\n]$\n\n(.|\n)*"
         )
         return PATTERN
 
