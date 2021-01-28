@@ -1,10 +1,14 @@
 import re
 
+from commitizen import defaults
 from commitizen.cz.base import BaseCommitizen
 from commitizen.cz.utils import multiple_line_breaker, required_validator
 from commitizen.cz.exceptions import CzException
 
 class Conventional_jiraCz(BaseCommitizen):
+    bump_pattern = defaults.bump_pattern
+    bump_map = defaults.bump_map
+
     def questions(self) -> list:
         questions = [
             {
